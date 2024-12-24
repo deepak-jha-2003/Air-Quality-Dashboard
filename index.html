@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Air Quality Dashboard</h1>
+        <div class="fields">
+            <div class="field" id="field1">PM2.5: <span id="field1Value">Loading...</span></div>
+            <div class="field" id="field2">PM10: <span id="field2Value">Loading...</span></div>
+            <div class="field" id="field3">Ozone: <span id="field3Value">Loading...</span></div>
+            <div class="field" id="field4">Humidity: <span id="field4Value">Loading...</span></div>
+            <div class="field" id="field5">Temperature: <span id="field5Value">Loading...</span></div>
+            <div class="field" id="field6">CO: <span id="field6Value">Loading...</span></div>
+        </div>
+        <div class="graph-container">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div id="timer" class="timer">
+            Last Data Refresh: <span id="lastRefreshTime">Loading...</span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
